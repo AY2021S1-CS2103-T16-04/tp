@@ -26,8 +26,10 @@ import seedu.schedar.model.task.Task;
 import seedu.schedar.model.task.TaskDate;
 import seedu.schedar.model.task.Title;
 
+//@@author e0316059
+//Reused from https://github.com/AY1920S2-CS2103T-W12-4/main with minor modifications
 /**
- * Edits the details of an existing recipe in the recipe book.
+ * Edits the details of an existing deadline in the task manager.
  */
 public class EditDeadlineCommand extends Command {
 
@@ -96,6 +98,8 @@ public class EditDeadlineCommand extends Command {
 
         return new CommandResult(String.format(MESSAGE_EDIT_TASK_SUCCESS, editedTask));
     }
+    
+    //@@author
 
     /**
      * Creates and returns a {@code Deadline} with the details of {@code deadlineToEdit}
